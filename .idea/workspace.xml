@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="df867de4-cb3e-4c94-8cca-1be2f6df6434" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../STUDIA/Grafika/Grafika/Controls/BezierSegment.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../STUDIA/Grafika/Grafika/Controls/BezierSegment.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../STUDIA/Grafika/Grafika/Controls/Polygon.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../STUDIA/Grafika/Grafika/Controls/Polygon.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../STUDIA/Grafika/Grafika/Controls/Vertex.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../STUDIA/Grafika/Grafika/Controls/Vertex.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../STUDIA/Grafika/Grafika/Elements/Edge.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../STUDIA/Grafika/Grafika/Elements/Edge.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../STUDIA/Grafika/Grafika/ExtraCommands/EdgeRightClickMenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../STUDIA/Grafika/Grafika/ExtraCommands/EdgeRightClickMenu.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../STUDIA/Grafika/Grafika/ExtraCommands/MoveCommands.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../STUDIA/Grafika/Grafika/ExtraCommands/MoveCommands.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../STUDIA/Grafika/Grafika/ExtraCommands/ToggleCommands.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../STUDIA/Grafika/Grafika/ExtraCommands/ToggleCommands.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../STUDIA/Grafika/Grafika/ExtraCommands/VertexRightClickMenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../STUDIA/Grafika/Grafika/ExtraCommands/VertexRightClickMenu.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../STUDIA/Grafika/Grafika/MainForm.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../STUDIA/Grafika/Grafika/MainForm.Designer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../STUDIA/Grafika/Grafika/MainForm.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../STUDIA/Grafika/Grafika/MainForm.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../STUDIA/Grafika/Grafika/MainForm.resx" beforeDir="false" afterPath="$PROJECT_DIR$/../STUDIA/Grafika/Grafika/MainForm.resx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../STUDIA/Grafika/Grafika/Visuals/Bezier.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../STUDIA/Grafika/Grafika/Visuals/Bezier.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../STUDIA/Grafika/Grafika/Visuals/Bresenham.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../STUDIA/Grafika/Grafika/Visuals/Bresenham.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../STUDIA/Grafika/Grafika/Visuals/IVisual.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../STUDIA/Grafika/Grafika/Visuals/IVisual.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../STUDIA/Grafika/Grafika/Visuals/SemiCircle.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../STUDIA/Grafika/Grafika/Visuals/SemiCircle.cs" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 8
+}]]></component>
+  <component name="ProjectId" id="37yWCjzPgHdMqUjA9LQE6f3Gy0q" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.OpenDjangoStructureViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "ai.playground.ignore.import.keys.banner.in.settings": "true",
+    "django.template.preview.state": "SHOW_EDITOR_AND_PREVIEW",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Users/pluka/Desktop/CarParking",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="CarParking" type="Python.DjangoServer" factoryName="Django server">
+      <module name="CarParking" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="RUN_TOOL" value="" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-9b0f141eb926-JavaScript-PY-253.29346.142" />
+        <option value="bundled-python-sdk-f2b7a9f6281b-6e1f45a539f7-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-253.29346.142" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="df867de4-cb3e-4c94-8cca-1be2f6df6434" name="Changes" comment="" />
+      <created>1767875666203</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1767875666203</updated>
+      <workItem from="1767875667420" duration="2934000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

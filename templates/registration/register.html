@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h2>Rejestracja nowego użytkownika</h2>
+
+    <form method="post">
+        {% csrf_token %}
+
+        {% for field in form %}
+            <div class="form-group">
+                <label>{{ field.label }}</label>
+                {{ field }}
+                {% if field.errors %}
+                    <div class="error-msg">{{ field.errors }}</div>
+                {% endif %}
+                <span class="helptext">{{ field.help_text }}</span>
+            </div>
+        {% endfor %}
+
+        <button type="submit" class="btn">Załóż konto</button>
+    </form>
+
+    <p style="margin-top: 20px;">
+        Masz już konto? <a href="{% url 'login' %}">Zaloguj się</a>.
+    </p>
+{% endblock %}

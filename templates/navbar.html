@@ -1,0 +1,19 @@
+<nav>
+    <a href="{% url 'home' %}" class="logo">🅿️ ParkingApp</a>
+
+    <div class="links">
+        {% if user.is_authenticated %}
+            <span>Witaj, <strong>{{ user.username }}</strong></span>
+            <a href="{% url 'reservation_list' %}">Moje Rezerwacje</a>
+            <a href="{% url 'create_reservation' %}" class="btn btn-small">Zarezerwuj</a>
+
+            <form action="{% url 'logout' %}" method="post" style="display:inline;">
+                {% csrf_token %}
+                <button type="submit">Wyloguj</button>
+            </form>
+        {% else %}
+            <a href="{% url 'login' %}">Logowanie</a>
+            <a href="{% url 'register' %}">Rejestracja</a>
+        {% endif %}
+    </div>
+</nav>

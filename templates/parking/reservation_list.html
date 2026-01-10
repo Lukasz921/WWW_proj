@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h2>Twoje Rezerwacje</h2>
+
+    {% if reservations %}
+        <table>
+            <thead>
+                <tr>
+                    <th>Rejestracja</th>
+                    <th>Miejsce</th>
+                    <th>Od</th>
+                    <th>Do</th>
+                    <th>Akcja</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for res in reservations %}
+                <tr>
+                    <td>{{ res.license_plate }}</td>
+                    <td>{{ res.spot }}</td>
+                    <td>{{ res.start_time|date:"d.m.Y H:i" }}</td>
+                    <td>{{ res.end_time|date:"d.m.Y H:i" }}</td>
+                    <td>
+                        <a href="{% url 'edit_reservation' res.id %}" class="btn btn-small">Edytuj</a>
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    {% else %}
+        <p>Nie masz jeszcze żadnych rezerwacji.</p>
+        <a href="{% url 'create_reservation' %}" class="btn">Dokonaj pierwszej rezerwacji</a>
+    {% endif %}
+{% endblock %}
