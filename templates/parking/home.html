@@ -1,20 +1,18 @@
 {% extends 'base.html' %}
-
 {% block content %}
-    <h1>Witamy na parkingu</h1>
-    <p>Wybierz strefę, aby sprawdzić dostępne miejsca i cennik.</p>
-
+    <h1>Welcome at ParkingApp</h1>
+    <p>Choose zone to check available spots and prices.</p>
     {% if zones %}
         <div class="zone-list">
             {% for zone in zones %}
                 <div class="card">
                     <h3>{{ zone.name }}</h3>
-                    <p>Cena: <span class="price">{{ zone.price_per_hour }} PLN/h</span></p>
-                    <a href="{% url 'zone_detail' zone.id %}" class="btn">Zobacz szczegóły</a>
+                    <p>Price: <span class="price">{{ zone.price_per_hour }} $/h</span></p>
+                    <a href="{% url 'zone_detail' zone.id %}" class="btn">More details</a>
                 </div>
             {% endfor %}
         </div>
     {% else %}
-        <p>Brak skonfigurowanych stref parkingu.</p>
+        <p>No configured parking zones.</p>
     {% endif %}
 {% endblock %}

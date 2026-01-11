@@ -1,19 +1,17 @@
 <nav>
     <a href="{% url 'home' %}" class="logo">🅿️ ParkingApp</a>
-
     <div class="links">
         {% if user.is_authenticated %}
-            <span>Witaj, <strong>{{ user.username }}</strong></span>
-            <a href="{% url 'reservation_list' %}">Moje Rezerwacje</a>
-            <a href="{% url 'create_reservation' %}" class="btn btn-small">Zarezerwuj</a>
-
+            <span>Welcome, <strong>{{ user.username }}</strong></span>
+            <a href="{% url 'reservation_list' %}">My reservations</a>
+            <a href="{% url 'create_reservation' %}" class="btn btn-small">Create reservation</a>
             <form action="{% url 'logout' %}" method="post" style="display:inline;">
                 {% csrf_token %}
-                <button type="submit">Wyloguj</button>
+                <button type="submit">Logout</button>
             </form>
         {% else %}
-            <a href="{% url 'login' %}">Logowanie</a>
-            <a href="{% url 'register' %}">Rejestracja</a>
+            <a href="{% url 'login' %}">Login</a>
+            <a href="{% url 'register' %}">Signup</a>
         {% endif %}
     </div>
 </nav>

@@ -1,24 +1,21 @@
 {% extends 'base.html' %}
-
 {% block content %}
-    <h2>Strefa: {{ zone.name }}</h2>
-    <p><strong>Cena:</strong> {{ zone.price_per_hour }} PLN za godzinę</p>
+    <h2>Zone: {{ zone.name }}</h2>
+    <p><strong>Price:</strong> {{ zone.price_per_hour }} $ per hour</p>
     <hr>
-
-    <h3>Miejsca w tej strefie:</h3>
+    <h3>Spots in zone:</h3>
     <ul>
         {% for spot in zone.spots.all %}
             <li>
-                <strong>Miejsce {{ spot.spot_number }}</strong>
+                <strong>Spot {{ spot.spot_number }}</strong>
                 {% if spot.is_disabled_friendly %}
-                    <span style="color:blue">♿ (Dla niepełnosprawnych)</span>
+                    <span style="color:blue">♿ (For disabled)</span>
                 {% endif %}
             </li>
         {% empty %}
-            <li>Brak miejsc w tej strefie.</li>
+            <li>No available spots in zone.</li>
         {% endfor %}
     </ul>
-
     <br>
-    <a href="{% url 'home' %}" class="btn">Powrót do listy stref</a>
+    <a href="{% url 'home' %}" class="btn">Back to zone list</a>
 {% endblock %}

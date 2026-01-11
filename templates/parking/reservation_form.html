@@ -1,16 +1,21 @@
 {% extends 'base.html' %}
-
 {% block content %}
     <h2>{{ title }}</h2>
-
     <form method="post" onsubmit="return validateReservationForm()">
         {% csrf_token %}
-
+        {% if form.non_field_errors %}
+            <div class="messages" style="margin-bottom: 20px;">
+                {% for error in form.non_field_errors %}
+                    <li class="error">
+                        {{ error }}
+                    </li>
+                {% endfor %}
+            </div>
+        {% endif %}
         {% for field in form %}
             <div class="form-group">
                 <label for="{{ field.id_for_label }}">{{ field.label }}</label>
                 {{ field }}
-
                 {% if field.errors %}
                     <div class="error-msg">
                         {% for error in field.errors %}
@@ -18,16 +23,14 @@
                         {% endfor %}
                     </div>
                 {% endif %}
-
                 {% if field.help_text %}
                     <span class="helptext">{{ field.help_text }}</span>
                 {% endif %}
             </div>
         {% endfor %}
-
         <div style="margin-top: 20px;">
-            <button type="submit" class="btn">Zapisz rezerwację</button>
-            <a href="{% url 'reservation_list' %}" style="margin-left: 10px;">Anuluj</a>
+            <button type="submit" class="btn">Save reservation</button>
+            <a href="{% url 'reservation_list' %}" style="margin-left: 10px;">Cancel</a>
         </div>
     </form>
 {% endblock %}

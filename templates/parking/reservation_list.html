@@ -1,17 +1,15 @@
 {% extends 'base.html' %}
-
 {% block content %}
-    <h2>Twoje Rezerwacje</h2>
-
+    <h2>Your Reservations</h2>
     {% if reservations %}
         <table>
             <thead>
                 <tr>
-                    <th>Rejestracja</th>
-                    <th>Miejsce</th>
-                    <th>Od</th>
-                    <th>Do</th>
-                    <th>Akcja</th>
+                    <th>License plate</th>
+                    <th>Spot</th>
+                    <th>From</th>
+                    <th>Till</th>
+                    <th>Action</th>
                 </tr>
             </thead>
             <tbody>
@@ -22,14 +20,14 @@
                     <td>{{ res.start_time|date:"d.m.Y H:i" }}</td>
                     <td>{{ res.end_time|date:"d.m.Y H:i" }}</td>
                     <td>
-                        <a href="{% url 'edit_reservation' res.id %}" class="btn btn-small">Edytuj</a>
+                        <a href="{% url 'edit_reservation' res.id %}" class="btn btn-small">Edit</a>
                     </td>
                 </tr>
                 {% endfor %}
             </tbody>
         </table>
     {% else %}
-        <p>Nie masz jeszcze żadnych rezerwacji.</p>
-        <a href="{% url 'create_reservation' %}" class="btn">Dokonaj pierwszej rezerwacji</a>
+        <p>No reservations yet.</p>
+        <a href="{% url 'create_reservation' %}" class="btn">Make first reservation</a>
     {% endif %}
 {% endblock %}

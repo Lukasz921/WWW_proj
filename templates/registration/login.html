@@ -1,19 +1,14 @@
 {% extends 'base.html' %}
-
 {% block content %}
-    <h2>Logowanie</h2>
-
+    <h2>Logging in</h2>
     <form method="post">
         {% csrf_token %}
         {{ form.as_p }}
-
-        <button type="submit" class="btn">Zaloguj się</button>
-
+        <button type="submit" class="btn">Login</button>
         <input type="hidden" name="next" value="{{ next }}">
     </form>
-
     <p style="margin-top: 20px;">
-        Nie masz konta? <a href="{% url 'register' %}">Zarejestruj się</a>.<br>
-        <a href="{% url 'password_reset' %}">Zapomniałeś hasła?</a>
+        No account? <a href="{% url 'register' %}">Signup</a>.<br>
+        <a href="{% url 'password_reset' %}">Forgot password?</a>
     </p>
 {% endblock %}

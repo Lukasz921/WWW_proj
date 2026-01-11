@@ -1,11 +1,8 @@
 {% extends 'base.html' %}
-
 {% block content %}
-    <h2>Rejestracja nowego użytkownika</h2>
-
+    <h2>Signing up new user</h2>
     <form method="post">
         {% csrf_token %}
-
         {% for field in form %}
             <div class="form-group">
                 <label>{{ field.label }}</label>
@@ -16,11 +13,10 @@
                 <span class="helptext">{{ field.help_text }}</span>
             </div>
         {% endfor %}
-
-        <button type="submit" class="btn">Załóż konto</button>
+        <button type="submit" class="btn">Create account</button>
     </form>
 
     <p style="margin-top: 20px;">
-        Masz już konto? <a href="{% url 'login' %}">Zaloguj się</a>.
+        Have account? <a href="{% url 'login' %}">Login</a>.
     </p>
 {% endblock %}
