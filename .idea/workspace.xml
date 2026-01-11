@@ -2,12 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="df867de4-cb3e-4c94-8cca-1be2f6df6434" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/parking/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/parking/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/parking/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/parking/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/parking_project/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/parking_project/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/parking/reservation_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/parking/reservation_list.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../STUDIA/Grafika/Grafika/Controls/BezierSegment.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../STUDIA/Grafika/Grafika/Controls/BezierSegment.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../STUDIA/Grafika/Grafika/Controls/Polygon.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../STUDIA/Grafika/Grafika/Controls/Polygon.cs" afterDir="false" />
@@ -103,7 +97,7 @@
       <workItem from="1768126247270" duration="7597000" />
       <workItem from="1768136578011" duration="4031000" />
       <workItem from="1768141704297" duration="430000" />
-      <workItem from="1768142206311" duration="424000" />
+      <workItem from="1768142206311" duration="596000" />
     </task>
     <servers />
   </component>
