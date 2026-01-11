@@ -45,7 +45,7 @@ class Reservation(models.Model):
         if self.start_time >= self.end_time:
             raise ValidationError("Start time has to be earlier than end time.")
         if self.start_time < timezone.now():
-            raise ValidationError("Cannon reserve in past.")
+            raise ValidationError("Cannot reserve in past.")
         # Walidacja - jeżeli oba obiekty istnieją (aby nie porównywać none) to sprawdzamy czy daty są poprawne
 
         collisions = Reservation.objects.filter( # pobieramy wszystkie rezerwacje na to miejsce

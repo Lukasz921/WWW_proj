@@ -5,7 +5,7 @@ from parking import views
 from rest_framework.routers import DefaultRouter
 
 # Użytkownik wpisuje adres strony, wówczas trafia to tutaj
-# Filtrujemy po adresach i jeżeli taki istnieje, zwracamy odpowiednie view wpp
+# Filtrujemy po adresach i jeżeli taki istnieje, zwracamy odpowiednie view
 
 # Router API - tworzymy automatyczne urle dla spots i reservations
 router = DefaultRouter()
@@ -19,6 +19,7 @@ urlpatterns = [
     path('my-reservations/', views.reservation_list, name='reservation_list'),
     path('reserve/', views.create_reservation, name='create_reservation'),
     path('reserve/edit/<int:pk>/', views.edit_reservation, name='edit_reservation'),
+    path('reserve/delete/<int:pk>/', views.delete_reservation, name='delete_reservation'),
 
     # Auth URLs - Django wbudowane + rejestracja
     path('accounts/login/', auth_views.LoginView.as_view(), name='login'),

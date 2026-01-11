@@ -60,6 +60,15 @@ def edit_reservation(request, pk):
         form = ReservationForm(instance=reservation) # formularz ma obecne dane z bazy (modyfikowalne)
     return render(request, 'parking/reservation_form.html', {'form': form, 'title': 'Edit Reservation'})
 
+# Usuwanie rezerwacji - wymagane zalogowanie
+@login_required
+def delete_reservation(request, pk):
+    reservation = get_object_or_404(Reservation, pk=pk, user=request.user) # pobieramy daną rezerwacje, ale
+    # tylko jeśli należy do tego usera
+    reservation.delete()
+    messages.success(request, "Reservation successfully deleted.")
+    return redirect('reservation_list')
+
 # Rejestracja użytkownika
 # Tutaj dotyczy to domyślnego modelu user Django
 def register(request):
