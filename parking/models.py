@@ -4,8 +4,6 @@ from django.core.exceptions import ValidationError
 from django.utils import timezone
 from django.core.validators import MinValueValidator
 
-# Plik bazy danych
-
 # Model 1: Strefa parkingu
 # Tabela w bazie z 2 kolumnami - name(str) oraz price_per_hour(decimal)
 class ParkingZone(models.Model):

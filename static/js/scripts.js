@@ -32,7 +32,7 @@ function validateReservationForm() {
     return isValid;
 }
 
-// Dodatkowa funkcjonalność JS
+// Dodatkowa funkcjonalność JS - podświetlenie aktywnego linku w menu
 document.addEventListener("DOMContentLoaded", function() {
     console.log("Parking System Loaded");
     // Podświetlenie aktywnego linku w menu

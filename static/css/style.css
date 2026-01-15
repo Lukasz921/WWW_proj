@@ -27,6 +27,11 @@ nav .logo {
     text-decoration: none;
 }
 
+nav .links span {
+    color: #ecf0f1;
+    margin-right: 10px;
+}
+
 nav .links a, nav .links button {
     color: #ecf0f1;
     text-decoration: none;
