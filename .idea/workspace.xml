@@ -2,10 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="df867de4-cb3e-4c94-8cca-1be2f6df6434" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/navbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/navbar.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/registration/logged_out.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../STUDIA/Grafika/Grafika/Controls/BezierSegment.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../STUDIA/Grafika/Grafika/Controls/BezierSegment.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../STUDIA/Grafika/Grafika/Controls/Polygon.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../STUDIA/Grafika/Grafika/Controls/Polygon.cs" afterDir="false" />
@@ -110,7 +106,7 @@
       <workItem from="1768477965309" duration="174000" />
       <workItem from="1768478150614" duration="301000" />
       <workItem from="1768734901139" duration="4101000" />
-      <workItem from="1768746664207" duration="1890000" />
+      <workItem from="1768746664207" duration="2094000" />
     </task>
     <servers />
   </component>
