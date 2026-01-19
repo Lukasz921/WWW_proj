@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 {% block content %}
     <h2>{{ title }}</h2>
-    <form method="post" onsubmit="return validateReservationForm()">
+    <form method="post" onsubmit="return validateReservationForm()" novalidate>
         {% csrf_token %}
         {% if form.non_field_errors %}
             <div class="messages" style="margin-bottom: 20px;">
